@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inder&family=Zilla+Slab&display=swap" rel="stylesheet');
 
 * {
     margin: 0;
@@ -8,8 +8,8 @@
 
 :root{
     font-size: 62.5%; /*10px / 16px */
-    --font-default: 'Montserrat';
-    --font-heading: 'Poppins';
+    --font-default: 'Zilla Slab';
+    --font-heading: 'Inder';
     --color-default: #FFF;
     --color-secundary: #000;
 }
@@ -18,25 +18,24 @@ body{
     font-family: var(--font-default);
 }
 
-header{
-    display: flex; /*flexbox*/
-    flex-direction: column;
+/*header{
+    display: flex; /*flexbox*//*
+    flex-direction: row;
     align-items: flex-start;
-    gap: 2rem;
-    height: 100vh;
-    background-image: url('../images/hero.jpg');
-    background-size: cover;
+    height: 50vh;
+    gap: 30.125rem;
+    background-color: var(--color-secundary);
     color: var(--color-default);
-    /* shorthand */
-    padding: 21rem 11rem;
+    /* shorthand *//*
+    padding: 1.313rem 1.438rem;
    
-}
+}*/
 
 h1, 
 h2, 
 h3 {
     font-family: var(--font-heading);
-    font-weight: 900;   
+    font-weight: 900; 
 }
 
 h1 {
@@ -57,8 +56,8 @@ span {
 }
 
 .botao{
-    padding: 1.4rem 11rem;
-    background: linear-gradient(90deg, #6A3093 0%, #A044FF 100%);
+    padding: 1.4rem 1rem;
+    background: var(--color-secundary);
     border-radius: 10px;
     font-size: 3rem;
     color: #FFFFFF;
@@ -70,15 +69,41 @@ section {
     display: flex;
     gap: 2rem;
     padding: 8.6rem;
+    background-color: var(--color-secundary);
 }
 
-.avatar {
+/*.avatar {
     border-radius: 50%;
-}
+}*/
 
-#texto-apresentacao{
+/*#texto-apresentacao{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 2rem;
+}*/
+
+#header1{
+    display: flex; /*flexbox*/
+    flex-direction: row;
+    align-items: flex-start;
+    height: 32vh;
+    gap: 3.125rem;
+    background-color: var(--color-secundary);
+    color: var(--color-default);
+    /* shorthand */
+    padding: 1.313rem 1.438rem;
+}
+
+#header2{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 5.56rem;
+    background-color: var(--color-secundary);
+    padding: 1rem 25rem;
+}
+
+#textbox {
+    padding: 1.4rem 11rem;
 }
