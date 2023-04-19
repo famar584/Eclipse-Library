@@ -50,7 +50,7 @@ h2{
 
 h3{
     font-family: var(--font-default);
-    font-size: 3rem;
+    font-size: 5rem;
     color: var(--color-default)
 }
 
@@ -96,11 +96,12 @@ section {
 
 #header2{
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    height: 19vh;
+    flex-direction: column;
+    align-items: center;
+    height: 8vh;
     gap: 5.56rem;
-    background-color: var(--color-secundary);
+    background-color: #828282;
+    color: var(--color-default);
     padding: 1rem 25rem;
 }
 
@@ -115,12 +116,24 @@ section {
 
 #lista-livros{
     display: flex;
-    gap: 3rem;
-    justify-content: left;
-    height: 32vh;
-    list-style: none;
+    flex-direction: column;
+    /*justify-content: left;*/
+    height: 28vh;
     background-color: var(--color-secundary);
     padding-left: 0.8rem;
+}
+
+#lista-livros ul{
+    display: flex;
+    justify-content: left;
+    gap: 4rem;
+    margin-top: 0rem;
+}
+
+#lista-livros li{
+    list-style: none;
+    position: sticky;
+    cursor: pointer;
 }
 
 #textbox {
@@ -153,4 +166,67 @@ section {
     bottom: 10%;
     opacity: 0;
     transition: opacity .5s ease-in-out, bottom .5s;
+}
+
+.hamburguer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 2.4rem;
+    width: 2.4rem;
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.linha{
+    height: .5rem;
+    width: 100%;
+    background-color: #FFF;
+    box-shadow: 2px 2px 2px #000;
+}
+
+.menu{
+    height: 100vh;
+    width: 20rem;
+    position: fixed;
+    right: -20rem;
+    background-color: #FFF;
+    z-index: 9;
+    transition: right 1s;
+    font-size: 1.8rem;
+}
+
+.menu a{
+    text-decoration: none;
+    color: var(--color-secundary);
+}
+.menu a:hover{
+    color: #6A3093;
+}
+
+.menu ul{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2rem;
+    gap: 1.6rem
+}
+
+.menu li{
+    list-style: none;
+}
+
+.show-menu{
+    right: 0;
+}
+
+input[type=text]{
+    padding: .7rem;
+    color: var(--color-secundary);
+    border-style: groove;
+    border-radius: .3rem;
 }
